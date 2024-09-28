@@ -40,11 +40,11 @@ public class BigAstriod : MonoBehaviour
 
     public void HitAsteroid()
     {
-        rigidbody2D.velocity += Vector2.right * hit_speed;
+        rigidbody2D.velocity += Vector2.right * -hit_speed;
     }
 
     public void HitStar() {
-        rigidbody2D.velocity += Vector2.right * -star_speed;
+        rigidbody2D.velocity += Vector2.right * star_speed;
 
     }
 }
