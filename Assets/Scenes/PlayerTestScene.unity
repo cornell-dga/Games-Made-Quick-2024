@@ -224,7 +224,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6467662812675243019, guid: 09cc0357fb4e0174da4a55b6e34dd3c4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.43
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 6467662812675243019, guid: 09cc0357fb4e0174da4a55b6e34dd3c4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -274,6 +274,10 @@ PrefabInstance:
       propertyPath: laserPrefab
       value: 
       objectReference: {fileID: 9020067150152185236, guid: 4db5447109752d243a4287cc119f012d, type: 3}
+    - target: {fileID: 7635843239888432489, guid: 09cc0357fb4e0174da4a55b6e34dd3c4, type: 3}
+      propertyPath: startLaserCharges
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8230583668736086718, guid: 09cc0357fb4e0174da4a55b6e34dd3c4, type: 3}
       propertyPath: m_Name
       value: UFO
