@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a651720c0cadef44987820e6f9928d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starting_speed: 1
+  starting_speed: -1
   bonus_speed: 0.2
   wait_time: 1
   start_delay: 0
