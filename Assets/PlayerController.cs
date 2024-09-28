@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public float laserOffset;
     public float percentDistanceFromTop;
     public int maxLaserCharges;
+    public int startLaserCharges;
     public int startLane;
     private float[] laneHeights;
     private int laserCharges;
@@ -20,8 +21,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        laneTarget= startLane;
-        laserCharges = 0;
+        laneTarget = startLane;
+        laserCharges = startLaserCharges;
         laneHeights = new float[5];
         float top = 2.5f;
         for (int i = 0; i < 5; i++)
@@ -58,6 +59,11 @@ public class PlayerController : MonoBehaviour
     {
         laserCharges++;
         laserCharges = Math.Max(laserCharges, maxLaserCharges);
+    }
+
+    public int GetLaserCharges()
+    {
+        return laserCharges;
     }
 
     public void TryToShootLaser()
