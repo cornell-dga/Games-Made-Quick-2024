@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.43, y: 2.32, z: 0}
-  m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
+  m_LocalScale: {x: 0.29, y: 0.29, z: 0.29}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 98f816887688b7446acbf9e5f7403988, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f05ceb4c01179541a967aa322d2d214, type: 3}
   m_Color: {r: 0.7294118, g: 0.7294118, b: 0.7294118, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -105,6 +105,7 @@ MonoBehaviour:
   laserOffset: 0
   percentDistanceFromTop: 10
   maxLaserCharges: 3
+  startLaserCharges: 0
   startLane: 1
 --- !u!70 &4591556341229651799
 CapsuleCollider2D:
@@ -138,9 +139,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.31}
-  m_Size: {x: 5.61, y: 4.26}
-  m_Direction: 1
+  m_Offset: {x: 0, y: -0.05}
+  m_Size: {x: 5.61, y: 8.71}
+  m_Direction: 0
 --- !u!50 &1961872051574664023
 Rigidbody2D:
   serializedVersion: 4
