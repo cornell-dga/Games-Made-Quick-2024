@@ -49,6 +49,9 @@ public class PlayerController : MonoBehaviour
             if (laneTarget == 0) return;
             laneTarget--;
         }
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            TryToShootLaser();
+        }
     }
 
     public void AddLaser()

@@ -214,63 +214,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2183672481484860247
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3455907262414190114, guid: 4db5447109752d243a4287cc119f012d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.6169424
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455907262414190114, guid: 4db5447109752d243a4287cc119f012d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.7417054
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455907262414190114, guid: 4db5447109752d243a4287cc119f012d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.026382342
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455907262414190114, guid: 4db5447109752d243a4287cc119f012d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455907262414190114, guid: 4db5447109752d243a4287cc119f012d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455907262414190114, guid: 4db5447109752d243a4287cc119f012d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455907262414190114, guid: 4db5447109752d243a4287cc119f012d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455907262414190114, guid: 4db5447109752d243a4287cc119f012d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455907262414190114, guid: 4db5447109752d243a4287cc119f012d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3455907262414190114, guid: 4db5447109752d243a4287cc119f012d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9020067150152185236, guid: 4db5447109752d243a4287cc119f012d, type: 3}
-      propertyPath: m_Name
-      value: Laser
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4db5447109752d243a4287cc119f012d, type: 3}
 --- !u!1001 &4676034392911953948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -285,7 +228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6467662812675243019, guid: 09cc0357fb4e0174da4a55b6e34dd3c4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.32
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6467662812675243019, guid: 09cc0357fb4e0174da4a55b6e34dd3c4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -319,6 +262,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7635843239888432489, guid: 09cc0357fb4e0174da4a55b6e34dd3c4, type: 3}
+      propertyPath: startLane
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635843239888432489, guid: 09cc0357fb4e0174da4a55b6e34dd3c4, type: 3}
+      propertyPath: laserOffset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635843239888432489, guid: 09cc0357fb4e0174da4a55b6e34dd3c4, type: 3}
+      propertyPath: laserPrefab
+      value: 
+      objectReference: {fileID: 9020067150152185236, guid: 4db5447109752d243a4287cc119f012d, type: 3}
     - target: {fileID: 8230583668736086718, guid: 09cc0357fb4e0174da4a55b6e34dd3c4, type: 3}
       propertyPath: m_Name
       value: UFO
@@ -334,4 +289,3 @@ SceneRoots:
   m_Roots:
   - {fileID: 1706128713}
   - {fileID: 4676034392911953948}
-  - {fileID: 2183672481484860247}
