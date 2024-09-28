@@ -1,11 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D myRB;
+    public GameObject laserPrefab;
     public float laneSwapSpeed;
+    public float laserOffset;
     public float percentDistanceFromTop;
     public int maxLaserCharges;
     public int startLane;
@@ -45,5 +49,18 @@ public class PlayerController : MonoBehaviour
             if (laneTarget == 0) return;
             laneTarget--;
         }
+    }
+
+    public void AddLaser()
+    {
+        laserCharges++;
+        laserCharges = Math.Max(laserCharges, maxLaserCharges);
+    }
+
+    public void TryToShootLaser()
+    {
+        if (laserCharges == 0) return;
+        laserCharges--;
+        GameObject.Instantiate(laserPrefab, transform.position + Vector3.right*laserOffset, Quaternion.identity);
     }
 }
