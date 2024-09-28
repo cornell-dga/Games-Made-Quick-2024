@@ -5,12 +5,21 @@ using UnityEngine;
 
 public class BigAstriod : MonoBehaviour
 {
+
+    public static BigAstriod Instance;
     // Start is called before the first frame update
     private Rigidbody2D rigidbody2D;
     [SerializeField] private float starting_speed;
     [SerializeField] private float bonus_speed;
     [SerializeField] private float wait_time;
     [SerializeField] private float start_delay;
+    [SerializeField] float hit_speed;
+    [SerializeField] float star_speed;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -27,5 +36,15 @@ public class BigAstriod : MonoBehaviour
         if(collision.gameObject.CompareTag("Player")){
             GameManager.Instance.LoseGame();
         }
+    }
+
+    public void HitAsteroid()
+    {
+        rigidbody2D.velocity += Vector2.right * hit_speed;
+    }
+
+    public void HitStar() {
+        rigidbody2D.velocity += Vector2.right * -star_speed;
+
     }
 }
